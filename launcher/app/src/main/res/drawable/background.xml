@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fundo parado das telas secundárias: as mesmas cores do fundo animado. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="315"
+        android:startColor="#FF0D1226"
+        android:centerColor="#FF07080F"
+        android:endColor="#FF140B24" />
+</shape>

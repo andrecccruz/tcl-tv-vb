@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Banner 320x180 do próprio launcher (aparece na grade de apps). -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp" android:height="180dp">
+    <item>
+        <shape>
+            <gradient android:angle="315" android:startColor="#FF1F3A5F" android:endColor="#FF0F1A2B" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:width="96dp" android:height="96dp"
+        android:drawable="@drawable/ic_home" />
+</layer-list>

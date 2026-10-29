@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="64dp"
+    android:paddingEnd="64dp"
+    android:paddingTop="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/launcher_settings"
+        android:textColor="#FFFFFFFF"
+        android:textSize="34dp" />
+
+    <Switch
+        android:id="@+id/animated_background"
+        style="@style/SettingsItem"
+        android:text="@string/animated_background" />
+
+    <TextView
+        style="@style/SettingsHint"
+        android:text="@string/animated_background_hint" />
+
+    <TextView
+        android:id="@+id/particles"
+        style="@style/SettingsItem" />
+
+    <TextView
+        style="@style/SettingsHint"
+        android:text="@string/particles_hint" />
+
+    <Switch
+        android:id="@+id/use_as_home"
+        style="@style/SettingsItem"
+        android:text="@string/use_as_home" />
+
+    <TextView
+        style="@style/SettingsHint"
+        android:text="@string/use_as_home_hint" />
+</LinearLayout>

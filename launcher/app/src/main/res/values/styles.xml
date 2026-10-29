@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Inicio" parent="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/background</item>
+        <item name="android:windowShowWallpaper">false</item>
+        <item name="android:colorAccent">#FFE8C58A</item>
+    </style>
+
+    <!-- Tela principal: o fundo é desenhado pelo BackgroundView (opaco); a janela começa preta para a abertura. -->
+    <style name="Theme.Inicio.Home">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="SettingsItem">
+        <item name="android:layout_width">520dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/tile_bg</item>
+        <item name="android:paddingStart">22dp</item>
+        <item name="android:paddingEnd">22dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+        <item name="android:textSize">19dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="SettingsHint">
+        <item name="android:layout_width">520dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingStart">22dp</item>
+        <item name="android:textColor">#80FFFFFF</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+</resources>

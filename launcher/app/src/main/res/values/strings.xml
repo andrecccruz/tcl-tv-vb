@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Início</string>
+    <string name="all_apps">Todos os apps</string>
+    <string name="search">Pesquisar</string>
+    <string name="settings">Configurações</string>
+    <string name="launcher_settings">Ajustes do início</string>
+    <string name="animated_background">Fundo animado</string>
+    <string name="animated_background_hint">Luzes, partículas e ondas no fundo da tela inicial. Desligado, o fundo fica parado e a TV gasta menos.</string>
+    <string name="particles">Quantidade de partículas: %1$s</string>
+    <string name="particles_hint">Aperte OK para trocar. Se a tela inicial ficar travando, use \"Poucas\".</string>
+    <string name="particles_few">Poucas</string>
+    <string name="particles_normal">Normal</string>
+    <string name="particles_many">Muitas</string>
+    <string name="home_key_service">Início: botão Home</string>
+    <string name="home_key_service_description">Faz o botão Home do controle abrir o Início e troca a tela do Google pelo Início quando ela aparece (ao ligar a TV ou ao sair de um app). Só observa o botão Home e a tela do Google; não lê o conteúdo da tela.</string>
+    <string name="use_as_home">Usar como tela inicial</string>
+    <string name="use_as_home_hint">Ligado, o Início abre ao ligar a TV, ao apertar Home e ao sair de um app. Desligado, volta a ser só um app; a tela do Google segue instalada.</string>
+    <string name="no_search">Busca do sistema indisponível</string>
+    <string name="good_morning">Bom dia</string>
+    <string name="good_afternoon">Boa tarde</string>
+    <string name="good_evening">Boa noite</string>
+</resources>

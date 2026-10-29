@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Medidas em dp de uma tela de 1280x720 (Ui.scaled ajusta a densidade para qualquer resolução). -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fundo animado: gradiente, raios de luz, bokeh, estrelas e ondas. Nunca recebe foco. -->
+    <br.tvtcl.inicio.BackgroundView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:importantForAccessibility="no" />
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="48dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFFFF"
+                android:textSize="44dp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="sans-serif"
+                android:textColor="#FFB4BCCB"
+                android:textSize="19dp" />
+        </LinearLayout>
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="64dp"
+            android:layout_marginTop="34dp"
+            android:fontFamily="sans-serif-thin"
+            android:format12Hour="HH:mm"
+            android:format24Hour="HH:mm"
+            android:textColor="#FFFFFFFF"
+            android:textSize="76dp" />
+
+        <!-- Fileira de apps: desenhada inteira por uma View; o app em foco fica sempre no centro. -->
+        <br.tvtcl.inicio.AppRowView
+            android:id="@+id/row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Menu do rodapé: 4 botões redondos que viram pílulas quando recebem o foco. -->
+        <br.tvtcl.inicio.MenuBarView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <!-- Abertura (só quando o launcher inicia): tela preta e uma faixa de luz. -->
+    <br.tvtcl.inicio.IntroView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

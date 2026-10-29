@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Filtro de teclas (só o Home) e aviso de quando a tela do Google (launcherx) aparece.
+     Não lê o conteúdo da tela e não recebe eventos de nenhum outro app. -->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/home_key_service_description"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:packageNames="com.google.android.apps.tv.launcherx"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagRequestFilterKeyEvents"
+    android:canRequestFilterKeyEvents="true"
+    android:canRetrieveWindowContent="false"
+    android:notificationTimeout="0" />

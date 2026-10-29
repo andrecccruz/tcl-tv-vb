@@ -1,0 +1,19 @@
+# Ferramentas (binários de terceiros, baixe as suas)
+tools/
+platform-tools/
+
+# Dados da sua TV: lista de apps instalados, medidas, registro local
+backup/
+medidas/
+desativados.txt
+
+# Build do Android
+launcher/local.properties
+.gradle/
+build/
+*.apk
+*.aab
+*.keystore
+*.jks
+.idea/
+*.iml
